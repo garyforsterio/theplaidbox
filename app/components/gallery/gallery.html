@@ -1,5 +1,13 @@
 <div class="gallery-container">
     <div ng-repeat="item in vm.items" class="gallery-item">
-        {{item.name}}
+        <span> {{item.name}} </span>
+        <span> {{item.price}} </span>
+        <span> {{item.seller}} </span>
+    </div>
+    <div ng-repeat="item in vm.previews" class="gallery-preview">
+        <span> {{item.name}} </span>
+        <span> {{item.price}} </span>
+        <span> {{item.seller}} </span>
+        <img src="http://www.spyderonlines.com/images/wallpapers/random-picture/random-picture-13.jpg" alt="Owl">
     </div>
 </div>

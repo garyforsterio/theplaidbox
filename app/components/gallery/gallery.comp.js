@@ -15,14 +15,36 @@
     function GalleryController() {
         this.items = [
             {
-                name: "Template 1"
+                name: "Template 1",
+                price: "£100000",
+                seller: "George"
             },
             {
-                name: "Template 2"
+                name: "Template 2",
+                price: "£1000",
+                seller: "Mike"
             },
             {
-                name: "Template 3"
-            }
+                name: "Template 1",
+                price: "£100000",
+                seller: "George"
+            }];
+        this.previews = [
+            {
+                name: "Template 1",
+                price: "£100000",
+                seller: "George"
+            },
+            {
+                name: "Template 2",
+                price: "£1000",
+                seller: "Mike"
+            },
+            {
+                name: "Template 1",
+                price: "£100000",
+                seller: "George"
+            },
         ];
         this.$onInit = function() { };
         this.$onChanges = function(changesObj) { };
