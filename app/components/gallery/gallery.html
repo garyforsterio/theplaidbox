@@ -10,17 +10,17 @@
                 </div>
             </md-list-item>
             <md-subheader class="md-no-sticky">Preview</md-subheader>
-            <md-list-item class="md-3-line" ng-repeat="item in vm.items" ng-click="vm.preview({{ item.name }})">
+            <md-list-item class="md-3-line" ng-repeat="item in vm.previews" ng-click="vm.preview({{ item.name }})">
                 <img ng-src="http://www.spyderonlines.com/images/wallpapers/random-picture/random-picture-13.jpg" class="md-avatar" alt="{{item.name}}"
                 />
                 <div class="md-list-item-text" layout="column">
                     <h3>{{ item.name }}</h3>
                     <h4>{{ item.seller }}</h4>
                     <p>{{ item.price | currency }}</p>
-                    <div class="md-list-item-text" layout="row">
-                        <h2 ng-click="vm.purchase({{ item.name }}, {{ item.price }})">Purchase Now!</h2>
-                    </div>
                 </div>
+                <md-button ng-click="vm.purchase(item.name, item.price)">
+                    Purchase Now!
+                </md-button>
             </md-list-item>
         </md-list>
     </md-content>
